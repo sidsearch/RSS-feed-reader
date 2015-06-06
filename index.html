@@ -1,0 +1,22 @@
+
+<html>
+    <head>
+        <title>Get weather information</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">
+                <h1>Weather Information</h1>
+            </div>
+            <div id="content">
+                <form method="post" action="{{ url_for('weather_info') }}">
+                  <label for="city">Please provide the RSS link</label>
+                  <input type="text" name="city" /><br />
+                  <input type="submit" />
+                </form>
+            </div>
+
+        </div>
+    </body>
+</html>
+ 
