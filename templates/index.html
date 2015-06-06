@@ -1,17 +1,17 @@
 
 <html>
     <head>
-        <title>Get weather information</title>
+        <title>RSS feed reader app</title>
     </head>
     <body>
         <div class="container">
             <div class="title">
-                <h1>Weather Information</h1>
+                <h1>Provide RSS feeds here</h1>
             </div>
             <div id="content">
-                <form method="post" action="{{ url_for('weather_info') }}">
+                <form method="post" action="{{ url_for('show_feeds') }}">
                   <label for="city">Please provide the RSS link</label>
-                  <input type="text" name="city" /><br />
+                  <input type="text" name="FLINK" /><br />
                   <input type="submit" />
                 </form>
             </div>
